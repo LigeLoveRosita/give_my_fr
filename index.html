@@ -3,12 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KIZUKI ICO CONVERTER</title>
+<title>KIZUKI ICO 转换</title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
@@ -146,8 +147,10 @@ background:transparent;border:1px solid var(--color-border);color:var(--color-te
 .ico-preview-item span{display:block;font-size:10px;color:var(--color-text-muted);margin-top:4px;letter-spacing:0.05em}
 .footer{padding:60px 0 40px;border-top:1px solid var(--color-border);margin-top:80px;text-align:center}
 .footer p{font-size:11px;font-weight:400;letter-spacing:0.1em;color:var(--color-text-muted)}
-.footer a{color:var(--color-text-secondary);text-decoration:none;transition:color 0.3s ease}
-.footer a:hover{color:var(--color-text)}
+.footer-links{margin-top:12px}
+.footer-links a{color:var(--color-text-secondary);text-decoration:none;transition:color 0.3s ease;font-size:11px;font-weight:500;letter-spacing:0.1em}
+.footer-links a:hover{color:var(--color-text)}
+.separator{font-size:10px;color:var(--color-text-muted);opacity:0.4;margin:0 2px}
 .beian{font-size:10px;letter-spacing:0.05em;color:var(--color-text-muted);margin-top:12px}
 .beian a{color:var(--color-text-muted);text-decoration:none;transition:color 0.3s ease}
 .beian a:hover{color:var(--color-text)}
@@ -160,7 +163,7 @@ background:transparent;border:1px solid var(--color-border);color:var(--color-te
 <div class="logo">
 <img src="favicon.ico" class="logo-icon" alt="KIZUKI">
 <h1>KIZUKI</h1>
-<span class="logo-sub">ICO CONVERTER</span>
+<span class="logo-sub">ICO 转换</span>
 </div>
 </header>
 
@@ -187,13 +190,13 @@ background:transparent;border:1px solid var(--color-border);color:var(--color-te
 
 <div class="resolution-section">
 <div class="resolution-presets">
-<button class="preset-btn active" data-preset="standard">Standard</button>
-<button class="preset-btn" data-preset="all">All Sizes</button>
-<button class="preset-btn" data-preset="small">Small Only</button>
-<button class="preset-btn" data-preset="large">Large Only</button>
-<button class="preset-btn" data-preset="custom">Custom</button>
+<button class="preset-btn active" data-preset="standard">标准 (Standard)</button>
+<button class="preset-btn" data-preset="all">全部 (All Sizes)</button>
+<button class="preset-btn" data-preset="small">仅小尺寸 (Small Only)</button>
+<button class="preset-btn" data-preset="large">仅大尺寸 (Large Only)</button>
+<button class="preset-btn" data-preset="custom">自定义 (Custom)</button>
 </div>
-<div class="section-title">Select Resolutions</div>
+<div class="section-title">选择分辨率 （可选）</div>
 <div class="resolutions" id="resolutionGroup">
 <button class="resolution active" data-size="16">16x16</button>
 <button class="resolution active" data-size="32">32x32</button>
@@ -215,6 +218,15 @@ background:transparent;border:1px solid var(--color-border);color:var(--color-te
 
 <footer class="footer">
 <p>2026 KIZUKI TECHNOLOGY. ALL RIGHTS RESERVED.</p>
+<div class="footer-links">
+<a href="https://github.com/LigeLoveRosita/give_my_fr" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> 项目仓库</a>
+<span class="separator">/</span>
+<a href="https://github.com/wuha-like-sleep/SubnauticaMoreCoop" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> 无哈做的mod-深海迷航多人联机</a>
+<span class="separator">/</span>
+<a href="https://github.com/XFINL/Lunarbyte_SSL" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> LUNARBYTE_SSL</a>
+<span class="separator">/</span>
+<a href="https://github.com/XFINL/LunarByte_Heartbeat" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> LUNARBYTE_HEARTBEAT</a>
+</div>
 </footer>
 </div>
 
